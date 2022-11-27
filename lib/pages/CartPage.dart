@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import '../widgets/CartItemSamples.dart';
 import '../widgets/CartAppBar.dart';
+import '../widgets/CartBottomNavigationBar.dart';
 
 class CartPage extends StatelessWidget {
   const CartPage({super.key});
@@ -48,9 +49,10 @@ class CartPage extends StatelessWidget {
                         child: Text(
                           "Add Coupon Code",
                           style: TextStyle(
-                              color: Theme.of(context).primaryColor,
-                              fontWeight: FontWeight.bold,
-                              fontSize: 16),
+                            color: Theme.of(context).primaryColor,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       )
                     ],
@@ -61,6 +63,7 @@ class CartPage extends StatelessWidget {
           ),
         ],
       ),
+      bottomNavigationBar: CartBottomNavigationBar(),
     );
   }
 }

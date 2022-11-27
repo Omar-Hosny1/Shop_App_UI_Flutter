@@ -43,7 +43,7 @@ class HomePage extends StatelessWidget {
           onTap: (value) {},
           color: Theme.of(context).primaryColor,
           height: 70,
-          items: [
+          items: const [
             Icon(
               Icons.shopping_cart_outlined,
               size: 30,
