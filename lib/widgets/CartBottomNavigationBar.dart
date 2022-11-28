@@ -7,7 +7,7 @@ class CartBottomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return BottomAppBar(
       child: Container(
-        padding: EdgeInsets.symmetric(
+        padding: const EdgeInsets.symmetric(
           horizontal: 20,
           vertical: 15,
         ),
@@ -43,10 +43,10 @@ class CartBottomNavigationBar extends StatelessWidget {
                 borderRadius: BorderRadius.circular(15),
                 color: Theme.of(context).primaryColor,
               ),
-              padding: EdgeInsets.symmetric(vertical: 15),
+              padding: const EdgeInsets.symmetric(vertical: 15),
               child: Text(
                 "Check Out".toUpperCase(),
-                style: TextStyle(
+                style: const TextStyle(
                     color: Colors.white, fontSize: 16, letterSpacing: 2),
               ),
             )
